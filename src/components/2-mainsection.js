@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import '../styles/3-mainsection.css'
+import '../styles/2-mainsection.css'
 import puzzle1 from '../assets/puzzle-dynamic-color1.png'
 import puzzle2 from '../assets/puzzle-dynamic-color2.png'
 import planet from '../assets/planet.png'
