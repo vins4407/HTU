@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/1-navbar.css'
-import styled from 'styled-components';
 import HTUlogo from '../assets/HTU-logo.svg';
 
 const Navbar = () => {
