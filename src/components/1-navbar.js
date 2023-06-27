@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/1-navbar.css'
 import styled from 'styled-components';
+import HTUlogo from '../assets/HTU-logo.svg';
 
 const Navbar = () => {
   const handleScrollToSection = (sectionId) => {
@@ -16,40 +17,34 @@ const Navbar = () => {
   console.log('Navbar rendered'); // Check if Navbar is rendered
 
   return (
-   
     <div className="navbar">
-      <div className="logo">
+      <img className="navbar-logo" alt="" src={HTUlogo}/>
+      <div className="navbar-links-main">
+          <Link className='navbar-link'  to='/#prize' onClick={() => handleScrollToSection('prize')}>
+            Prizes
+          </Link>
+          <Link className='navbar-link'  to='/#tracks"' onClick={() => handleScrollToSection('prize')}>
+            Tracks
+          </Link> 
+           <Link className='navbar-link'  to='/#about-us' onClick={() => handleScrollToSection('prize')}>
+            About us
+          </Link>  
+          <Link className='navbar-link'  to='/#sponsers' onClick={() => handleScrollToSection('prize')}>
+            Sponsers
+          </Link>  
+          <Link className='navbar-link'  to='/#communities' onClick={() => handleScrollToSection('prize')}>
+            Communities
+          </Link> 
+           <Link className='navbar-link'  to='/#' onClick={() => handleScrollToSection('prize')}>
+            Venue
+          </Link>  
       </div>
-      <ul className="nav-links">
-        <li>
-          <Link to='/#prize' onClick={() => handleScrollToSection('prize')}>
-            <h3 >Prizes</h3>
-          </Link>
-        </li>
-        <li>
-          <Link to="/#tracks" onClick={() => handleScrollToSection('track')}>
-            <h3>Tracks</h3>
-          </Link>
-        </li>
-        <li>
-          <Link to="/#about-us" onClick={() => handleScrollToSection('about-us')}>
-            <h3>About us</h3>
-          </Link>
-        </li>
-        <li>
-          <Link to="/#Sponser-us" onClick={() => handleScrollToSection('Sponser-us')}>
-            <h3>Sponsor Us</h3>
-          </Link>
-        </li>
-        <li>
-          <Link to="/#Communities" onClick={() => handleScrollToSection('Communities')}>
-            <h3>Communities</h3>
-          </Link>
-        </li>
-      </ul>
+      <div className="join-discord-container">
+           <div className="join-discord1">JOIN DISCORD</div>
     </div>
-  
+  </div>
   );
 };
 
 export default Navbar;
+

@@ -23,7 +23,7 @@ const Container = styled.div`
 
 export default function Communities() {
   return (
-    <Section id="Communities">
+    <Section id="communities">
         <Container>
             Communities
         </Container>

@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Articulat CF';
+  src: url('./fonts/ArticulatCF-DemiBold.ttf') format('truetype');
+  /* Update the path to the font file if necessary */
+}
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./fonts/AeonikTRIAL-Regular.otf') format('opentype');
+  /* Update the path and format if necessary */
+}
+
+:root {
+  /* fonts */
+  --font-articulat-cf: "Articulat CF";
+  --font-aeonik: 'Aeonik';
+
+  /* font sizes */
+  --font-size-sm: 0.88rem;
+  --font-size-77xl: 6rem;
+  --font-size-xl: 1.25rem;
+  --font-size-45xl: 4rem;
+  --font-size-21xl: 2.5rem;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray-100: #202022;
+  --color-gray-200: #0d0d0e;
+  --color-gray-300: rgba(255, 255, 255, 0.16);
+  --color-gray-400: rgba(13, 13, 14, 0.6);
+  --color-gray-500: rgba(255, 255, 255, 0.3);
+  --color-gray-600: rgba(255, 255, 255, 0.8);
+  --color-gainsboro: #d9d9d9;
+  --color-darkorchid: #7138c7;
+  --gradient-text: linear-gradient(135deg, #7138C7 2.91%, #BB39B8 100%), linear-gradient(139deg, #A7E000 0%, #A5DA08 0.01%, #98B21D 23.50%, #5B9529 58.86%, #006A3B 100%);
+  --color-dimgray: #4d4d4d;
+
+  /* Gaps */
+  --gap-17xl: 2.25rem;
+
+  /* Paddings */
+  --padding-3xs: 0.63rem;
+  --padding-19xl: 2.38rem;
+
+  /* border radiuses */
+  --br-29xl: 48px;
+  --br-35xl: 54px;
+  --br-8xl: 27px;
+  --br-3xs: 10px;
+  --br-mid: 17px;
+  --br-xs: 12px;
+  --br-sm: 14px;
+  --br-23xl: 42px;
+  --br-lg: 18px;
+  --br-221xl: 240px;
+  --br-260xl-3: 279.3px;
+  --br-10xl: 29px;
+}
+
