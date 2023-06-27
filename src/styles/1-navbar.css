@@ -1,0 +1,38 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;    
+  }
+  .logo {
+    margin-left: 15px;
+    width: max-content;
+  }
+  .logo-image {
+    font-weight: bold;
+    width: 8vw;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: space-around;
+    width: 43%;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .nav-links li {
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: none;
+  }
+   
+  .nav-links .h3 {
+    color: #385e9c;
+    
+  }
+  
