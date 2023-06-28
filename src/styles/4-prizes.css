@@ -1,0 +1,63 @@
+.prize-container{
+    display: flex;
+    flex-direction: row;
+    height: 34.25rem; 
+    justify-content: center;
+    
+}
+.prize-title{
+    color: #FFF;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    font-family: var( --font-aeonik);
+}
+
+.prize-second{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 18.625rem;
+    height: 31.3125rem;
+    flex-shrink: 0;
+}
+
+.prize-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 28.9375rem;
+    height: 31.3125rem;
+    flex-shrink: 0;
+}
+
+.prize-third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 18.625rem;
+    height: 31.3125rem;
+    flex-shrink: 0;
+}
+
+.prize-amount{
+    color: #7138C7;
+    font-size: 4rem;
+    font-family: 'Aeonik';
+    margin-top: 2rem;
+}
+
+.prize-rank{
+color: #FFF;
+font-size: 1.25rem;
+margin-top: 1rem;
+font-family: 'Articulat CF';
+font-weight: 500;
+line-height: 1.75rem;
+}

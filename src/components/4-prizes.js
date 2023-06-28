@@ -1,35 +1,42 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../styles/4-prizes.css'
+import first from '../assets/firstPrize.png'
+import second from '../assets/secondPrize.png';
+import third from '../assets/thirdPrize.png';
 
 const Section = styled.div`
-  height: 100vh;
-  height: 100%;
-  margin-bottom: 5rem;
-  position: relative;
+  width: 90rem;
+  height: 43.75rem; 
   box-sizing: border-box;
-`;
-const Container = styled.div`
-  height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
   display: flex;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  flex-direction:column;
 `;
+
 
 
 function Prize () {
 	return (
         <Section id="prize" >  
-                <Container>       
-               Prizes
-                </Container>
+                  <div className='prize-title'>Prizes</div>
+                  <div className='prize-container'>
+                    <div className='prize-second'>
+                      <img  alt='second prize' src={second}></img>
+                      <span className='prize-amount'>15k</span>
+                      <span className='prize-rank'>1st runner up</span>
+                    </div>
+                    <div className='prize-first'>
+                      <img  alt='first prize' src={first}></img>
+                      <span className='prize-amount'>25k</span>
+                      <span className='prize-rank'>Winner</span>
+                    </div>
+                    <div className='prize-third'>
+                      <img  alt='third prize' src={third}></img>
+                      <span className='prize-amount'>10K</span>
+                      <span className='prize-rank'>2nd runner up</span>
+                    </div>
+                  </div>   
              
         </Section>    
 	);
