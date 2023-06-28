@@ -22,7 +22,7 @@ const Section = styled.div`
 
 function Tracks () {
 	return (
-		<Section  id="track">  
+		<Section  id="tracks">  
 			<div className='gradient-bg1'></div>
 			<div className='gradient-bg2'></div>
         	<div className='tracks-container'>

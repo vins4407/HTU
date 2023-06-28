@@ -23,11 +23,11 @@ function Home() {
         <About/>
         <Prize/>
         <Tracks/>
-        <Speakers/>
+        {/* <Speakers/> */}
         <Sponsers/>
-        <Organizers/>
       </div>
-      <Communities/>
+      <Organizers/>
+      {/* <Communities/> */}
       <Footer/>
     </div>
     

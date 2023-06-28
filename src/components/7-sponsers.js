@@ -27,7 +27,7 @@ const Container = styled.div`
 
 export default function Sponsers() {
   return (
-    <Section id="sponser">
+    <Section id="sponsers">
         <Container>
             Sponsers
         </Container>

@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
-  height: 100vh;
+  height: 26.8125rem; 
+  width:90rem;
   `;
 const Container = styled.div`
 	scroll-snap-align: center;
