@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link className='navbar-link'  to='/#tracks' onClick={() => handleScrollToSection('tracks')}>
             Tracks
           </Link> 
-           <Link className='navbar-link'  to='/#about-us' onClick={() => handleScrollToSection('about-us"')}>
+           <Link className='navbar-link'  to='/#about-us' onClick={() => handleScrollToSection('about-us')}>
             About us
           </Link>  
           <Link className='navbar-link'  to='/#sponsers' onClick={() => handleScrollToSection('sponsers')}>
@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* <Link className='navbar-link'  to='/#communities' onClick={() => handleScrollToSection('prize')}>
             Communities
           </Link>  */}
-           <Link className='navbar-link'  to='/' >venue
+           <Link className='navbar-link'  to='/'   >venue
           </Link>  
       </div>
       <div className="join-discord-container">
@@ -44,5 +44,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar ; 
 

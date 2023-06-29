@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HTUlogo from '../assets/HTU-logo.svg';
 import '../styles/10-footer.css'
+import { Link } from 'react-router-dom';
 import {AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 const Section = styled.div`
@@ -18,6 +19,13 @@ const Section = styled.div`
   }
   `;
 
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    console.log(section); // Check the value of the section element
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 
 
@@ -34,14 +42,14 @@ export default function Footer() {
            </div>
            <div className='footer-about'>
             <span className='footer-section-title'>Quick Links</span>
-            <span className='footer-link'>prize</span>
-            <span className='footer-link'>prize</span>
-            <span className='footer-link'>prize</span>
+          <Link to='/#prize' onClick={() => handleScrollToSection('prize')}><span className='footer-link'>Prize</span></Link>
+          <Link to='/#tracks' onClick={() => handleScrollToSection('tracks')}><span className='footer-link'>Tracks</span></Link>
+          <Link to='/#about-us' onClick={() => handleScrollToSection('about-us')}>  <span className='footer-link'>About Us</span> </Link>
 
            </div>
            <div className='footer-about'>
             <span className='footer-section-title'>Legal</span>
-            <span className='footer-link'>code of conduct</span>
+           <a href="https://drive.google.com/file/d/14rNyS0bFqo2o2H2Qh7RcreYkYflMJCrR/view?usp=sharing" ><span className='footer-link'>code of conduct</span> </a>
            </div>
          </div>
       </div>
