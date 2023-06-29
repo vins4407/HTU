@@ -5,10 +5,8 @@ import Prize from '../components/4-prizes'
 import About from '../components/3-about';
 import Tracks from '../components/5-tracks';
 import Sponsers from '../components/7-sponsers';
-import Communities from '../components/9-Communities';
 import Footer from '../components/10-footer';
 import Organizers from '../components/8-organizers';
-import Speakers from '../components/6-Speakers';
 
 import '../styles/0-home.css'
 function Home() {
@@ -24,8 +22,9 @@ function Home() {
         <Prize/>
         <Tracks/>
         {/* <Speakers/> */}
-        <Sponsers/>
       </div>
+      <Sponsers />
+
       <Organizers/>
       {/* <Communities/> */}
       <Footer/>

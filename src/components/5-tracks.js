@@ -9,7 +9,7 @@ import open from '../assets/tips_and_updates.png'
 import cloud from '../assets/cloud_download.png'
 import divider from '../assets/divider.png'
 const Section = styled.div`
-	width: 90rem;
+	width: 100rem;
 	height: 44.625rem;
 	flex-shrink: 0;
 	display:flex;

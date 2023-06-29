@@ -1,0 +1,99 @@
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.footer-logo{
+    width: 14.544rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    flex: 1;
+}
+
+.footer-sections{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 2;
+}
+.footer-section-title{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: 'Articulat CF';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+
+}
+.footer-about{
+  display: flex;
+  flex-direction: column;  
+  gap: 3.12rem;
+}
+
+.footer-link{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-family: 'Articulat CF';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    opacity: 0.4000000059604645; 
+}
+.separator{
+       
+        height: 0.0625rem; ;
+        width: 120rem;
+        opacity: 0.2;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+
+}
+.footer-socials{
+    display: flex;
+    justify-content: space-between;
+
+}
+.social-icon{
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 50px;
+    padding: 8px;
+    width: 2.11006rem;
+    height: 2.12381rem;
+
+}
+
+.social-icon:hover {
+
+    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    padding-top: 1rem;
+}
+
+.htu{
+    flex: 2 1;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 10rem;
+    opacity: 0.4000000059604645;
+    align-items: center;
+}
+
+
+/* 
+  color: #FFF;
+leading-trim: both;
+text-edge: cap;
+font-size: 0.875rem;
+font-family: Articulat CF;
+font-style: normal;
+font-weight: 400;
+line-height: normal; */
