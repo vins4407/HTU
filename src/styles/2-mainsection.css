@@ -3,13 +3,16 @@
     height: 18rem;
     justify-content: center;
     width: 100%; 
+    position: relative;
 }
+
 
 .main-section-content{
     height: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -27,22 +30,35 @@
 .social-section{
     display: flex;
     align-items: center;    
-    width: 28.6875rem;
     height: 3.375rem;
     padding-top: 2rem;
     gap: 1.5rem;
     flex-shrink: 0;
 }
 .join-discord{
-    display: inline-flex;
-    height: 2.375rem;
-    padding: 0.625rem 2.375rem;
+    width: 15.0625rem;
+    height: 3.375rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
-    flex-shrink: 0;
+    border: 27px;
     border-radius: 48px;
-    background: linear-gradient(135deg, #7138C7 2.91%, #BB39B8 100%), linear-gradient(139deg, #A7E000 0%, #A5DA08 0.01%, #98B21D 23.50%, #5B9529 58.86%, #006A3B 100%);
+    background: linear-gradient(135deg, #7138C7 2.91%, #BB39B8 100%), linear-gradient(139deg, #A7E000 0%, #A5DA08 0.01%, #98B21D 23.50%, #5B9529 58.86%, #006A3B 100%);   
+
+}
+.join-discord-wrap{
+    width: 14.9rem;
+    height: 3.2rem;
+    border-radius: 48px;
+    display: flex;
+    background: linear-gradient(135deg, #7138C7 2.91%, #BB39B8 100%), linear-gradient(139deg, #A7E000 0%, #A5DA08 0.01%, #98B21D 23.50%, #5B9529 58.86%, #006A3B 100%);   
+    justify-content: center;
+    align-items: center;
+
+}
+.join-discord-wrap:hover{
+    background: black;
+    
 }
 
 .follow-twitter{
@@ -52,8 +68,21 @@
     justify-content: center;
     align-items: center;
     border: 27px;
-    background: url(../assets/Rectangle-twitter.png);
-    
+    border-radius: 48px;
+    background: linear-gradient(135deg, #7138C7 2.91%, #BB39B8 100%), linear-gradient(139deg, #A7E000 0%, #A5DA08 0.01%, #98B21D 23.50%, #5B9529 58.86%, #006A3B 100%);   
+}
+.follow-twitter-wrap{
+    width: 14.9rem;
+    height: 3.2rem;
+    border-radius: 48px;
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+
+}
+.follow-twitter-wrap:hover{
+    background: none;
 }
 
 .Text{
@@ -61,28 +90,27 @@
     text-align: center;
     text-transform: capitalize;
     font-size: 0.875rem;
-    font-family: Articulat CF;
+    font-family: 'Articulat CF';
     font-weight: 600;
     letter-spacing: 0.0875rem;
     text-transform: uppercase;
 }
 
-.puzzle-div-first{
-    display: flex;
-    align-items: flex-end;
-    height: 18rem;
-}
+
 
 .puzzle-icon1 {
-    height: 13.33238rem;
-    width: 13.33238rem;
-    flex-shrink: 0; 
+    position: absolute;
+    top: 8.4rem;
+    left: 10.3rem;
+  
+   
   }
   
   .puzzle-icon2 {
-    width: 10.28rem;
-    height: 10.28rem;
+  position: absolute;
     object-fit: cover;
+    top: -0.6rem;
+    right: 11.0rem;
   }
 
   .planet-mask{
@@ -91,12 +119,61 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background: url(../assets/mask-group1.svg);
-    background-color: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.57) 43.23%, rgba(0, 0, 0, 0.58) 55.27%, rgba(0, 0, 0, 0.00) 78.10%);
-}
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.57) 43.23%, rgba(0, 0, 0, 0.58) 55.27%, rgba(0, 0, 0, 0.00) 78.10%);
 
+}
+.planet-outline{
+    position: absolute;
+    top: 17rem;
+    left: 8.5rem;
+  
+}
 .planet-img{
     height: 32.25rem;
     width: 61.5625rem;
+
    
+}
+
+@media only screen and (max-width: 768px) {
+    
+   .Title-Text{
+    font-size: 2.5rem;
+
+   }
+   .social-section{
+    flex-direction: column;
+   }
+   .puzzle-icon1{
+    top: 5rem;
+    left: 31.5rem;
+    width: 5.5rem;
+    
+   }
+   .puzzle-icon2{
+    top: -3rem;
+    right: 32rem;
+    width: 5rem;
+
+   }
+   .planet-mask{
+    height: fit-content;
+   
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+   }
+   .planet-img {
+    padding: 4rem;
+    width: 27rem;
+    height: 18rem;
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.57) 43.23%, rgba(0, 0, 0, 0.58) 55.27%, rgba(0, 0, 0, 0.00) 78.10%);
+  }
+  .planet-outline{
+    top: 18rem;
+    left: 29rem;
+    width: 32.6rem;
+    height: 17rem;
+  }
+
 }

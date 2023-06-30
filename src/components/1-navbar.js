@@ -17,25 +17,28 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img className="navbar-logo" alt="" src={HTUlogo}/>
-      <div className="navbar-links-main">
-          <Link className='navbar-link'  to='/#prize' onClick={() => handleScrollToSection('prize')}>
-            Prizes
-          </Link>
-          <Link className='navbar-link'  to='/#tracks' onClick={() => handleScrollToSection('tracks')}>
-            Tracks
-          </Link> 
-           <Link className='navbar-link'  to='/#about-us' onClick={() => handleScrollToSection('about-us')}>
-            About us
-          </Link>  
-          <Link className='navbar-link'  to='/#sponsers' onClick={() => handleScrollToSection('sponsers')}>
-            Sponsers
-          </Link>  
-          {/* <Link className='navbar-link'  to='/#communities' onClick={() => handleScrollToSection('prize')}>
-            Communities
-          </Link>  */}
-           <Link className='navbar-link'  to='/'   >venue
-          </Link>  
+      
+      <div className='navbar-float'>
+        <img className="navbar-logo" alt="" src={HTUlogo}/>
+        <div className="navbar-links-main">
+            <div className='navbar-links-wrapper'>
+        
+              <Link className='navbar-link'  to='/#prize' onClick={() => handleScrollToSection('prize')}>
+                Prizes
+              </Link>
+              <Link className='navbar-link'  to='/#tracks' onClick={() => handleScrollToSection('tracks')}>
+                Tracks
+              </Link>
+               <Link className='navbar-link'  to='/#about-us' onClick={() => handleScrollToSection('about-us')}>
+                About us
+              </Link>
+              <Link className='navbar-link'  to='/#sponsers' onClick={() => handleScrollToSection('sponsers')}>
+                Sponsers
+              </Link>
+               <Link className='navbar-link'  to='/'   >venue
+              </Link>
+            </div>
+        </div>
       </div>
       <div className="join-discord-container">
            <div className="join-discord1">JOIN DISCORD</div>

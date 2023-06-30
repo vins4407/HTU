@@ -12,6 +12,8 @@ const Section = styled.div`
   height: 48.125rem; 
   justify-content: center;
   display: flex;
+  position: relative;
+
 `;
 
 const AboutUsChild = styled.div`

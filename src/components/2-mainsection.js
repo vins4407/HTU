@@ -4,12 +4,16 @@ import '../styles/2-mainsection.css'
 import puzzle1 from '../assets/puzzle-dynamic-color1.png'
 import puzzle2 from '../assets/puzzle-dynamic-color2.png'
 import planet from '../assets/planet.png'
+import planetOutline from '../assets/mask-group1.svg'
 
 const Section = styled.div`
   width: 90rem;
   height: 62.1875rem;
   flex-shrink: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @media only screen and (max-width: 768px) {
+    height:fit-content;
+  }
 `;
 const Container = styled.div`
   height: 100%;
@@ -21,7 +25,8 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
-    justify-content: center;
+    -moz-box-pack: center;
+    padding-top: 3rem;
   }
 `;
 
@@ -31,7 +36,9 @@ export function MainSection(){
         <Section id="main-section">
             <Container>
               <div className="main-container">
-                <div className="puzzle-div-first"><img className="puzzle-icon1" alt="" src={puzzle1}/></div>
+              <img className="planet-outline" src={planetOutline} alt="planet-outline"></img>
+
+                <img className="puzzle-icon1" alt="" src={puzzle1}/>
                 <div className="main-section-content">
                <div className="Date-section">
                   <span>25 TO 27 </span>
@@ -41,12 +48,21 @@ export function MainSection(){
                 <div className="Title-Text">Think. Make. Solve.</div>
 
                 <div className="social-section">
+                <a target='_blanck' href='https://twitter.com/HTU_Mumbai' style={{textDecoration:'none'}}>
                     <div className="join-discord">
-                          <span className="Text">JOIN DISCORD</span>
+                      <div className="join-discord-wrap">
+                      <span className="Text">join discord</span>
+                      </div>
                     </div>
-                  <div className="follow-twitter">
-                    <span className="Text">FOLLOW ON TWITTER</span>
-                  </div>
+                  </a>
+                    
+                  <a target='_blanck' href='https://twitter.com/HTU_Mumbai' style={{textDecoration:'none'}}>
+                    <div className="follow-twitter">
+                      <div className="follow-twitter-wrap">
+                      <span className="Text">FOLLOW ON TWITTER</span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 </div>
                 <img className="puzzle-icon2" alt="" src={puzzle2}/>

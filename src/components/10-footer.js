@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import {AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 const Section = styled.div`
-  height: 24.8125rem; 
   width: 100%;
   display: flex;
   padding-top:4.75rem;
@@ -42,14 +41,14 @@ export default function Footer() {
            </div>
            <div className='footer-about'>
             <span className='footer-section-title'>Quick Links</span>
-          <Link to='/#prize' onClick={() => handleScrollToSection('prize')}><span className='footer-link'>Prize</span></Link>
-          <Link to='/#tracks' onClick={() => handleScrollToSection('tracks')}><span className='footer-link'>Tracks</span></Link>
-          <Link to='/#about-us' onClick={() => handleScrollToSection('about-us')}>  <span className='footer-link'>About Us</span> </Link>
+            <Link className='footer-link' to='/#prize' onClick={() => handleScrollToSection('prize')}>Prize</Link>
+            <Link className='footer-link' to='/#tracks' onClick={() => handleScrollToSection('tracks')}><span >Tracks</span></Link>
+            <Link className='footer-link' to='/#about-us' onClick={() => handleScrollToSection('about-us')}>  <span >About Us</span> </Link>
 
            </div>
            <div className='footer-about'>
             <span className='footer-section-title'>Legal</span>
-           <a href="https://drive.google.com/file/d/14rNyS0bFqo2o2H2Qh7RcreYkYflMJCrR/view?usp=sharing" ><span className='footer-link'>code of conduct</span> </a>
+           <a className='footer-link' target='_blanck' href="https://drive.google.com/file/d/14rNyS0bFqo2o2H2Qh7RcreYkYflMJCrR/view?usp=sharing" >code of conduct</a>
            </div>
          </div>
       </div>
@@ -58,7 +57,9 @@ export default function Footer() {
         <div className='social-container'>
           <AiFillInstagram className='social-icon'/>
          <AiFillLinkedin className='social-icon'/>
-         <AiFillTwitterCircle className='social-icon'/>
+         <a target='_blanck' href='https://twitter.com/HTU_Mumbai'>
+           <AiFillTwitterCircle className='social-icon'/>
+         </a>
         </div>
         <span className='htu'>©2023 Hack The Universe, Inc.</span>
       </div>

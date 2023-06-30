@@ -3,25 +3,23 @@
     flex-direction: row;
     justify-content: space-evenly;    
     padding-top: 6.25rem;
+    gap: 2rem;
 }
 .organizer-container{
-    width: 25.15663rem;
-    height: 36.8125rem; 
+    width: 20.2rem;
+    height: 31.8rem;
     border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.2);;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(141deg, rgba(255, 255, 255, 0.2) 0%, rgba(240, 240, 240, 0.2) 0.01%, rgba(243, 243, 243, 0.2) 32.81%, rgba(217, 217, 217, 0) 100%);
-   
-    
-   }
+}
 .organizer-container-main{
-    width: 25.15663rem;
-    height: 35.89006rem; 
+    width: 20.2rem;
+    height: 30.9rem;
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.2);;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(141deg, rgba(255, 255, 255, 0.2) 0%, rgba(240, 240, 240, 0.2) 0.01%, rgba(243, 243, 243, 0.2) 32.81%, rgba(217, 217, 217, 0) 100%);
-
 }
 
 .organizer-info{
@@ -30,8 +28,8 @@
     padding: 2.18rem;
 }
 .organizer-image{
-    width: 25.15663rem;
-    height: 24.23419rem;
+    width: 100%;
+    height: 60%;
     flex-shrink: 0;
     border-radius: 18px;
 
@@ -53,4 +51,11 @@ font-size: 1.25rem;
 font-family: Articulat CF;
 font-weight: 500;
 line-height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .organizers-section{
+        flex-direction: column;
+    }
+
 }

@@ -3,13 +3,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100rem;
+  width: 90rem;
   height: 9.25rem;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--color-white);
   font-family: 'Articulat CF';
+  
+}
+.navbar-float{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  width: 70rem;
+
 }
 
 .navbar-logo {  
@@ -19,17 +29,25 @@
 }
 
 .navbar-links-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 41.8rem;
+  height: 2.48rem;
+  background: rgba(255, 255, 255, 0.2);;
+  border-radius: 54px;
+
+  }
+.navbar-links-wrapper{
   text-decoration: none !important;;  
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 42.6875rem;
-  height: 3.375rem;
-  flex-shrink: 0; 
+  width: 41.6875rem;
+  height: 2.375rem;
   border-radius: 54px;
-  background: url(../assets//Rectangle.png); 
+  background: black;
 }
-
 .navbar-link{
   color: #FFF;
   text-decoration: none;
@@ -59,4 +77,41 @@
   position: relative;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+
+/* Media queries for mobile devices */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+    width: fit-content;
+
+  }
+  .navbar-float{
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    width: auto;
+  }
+
+  .navbar-links-main{
+    width: 22.2rem;   
+  }
+  .navbar-links-wrapper{
+    width:21.98rem ;
+
+  }
+  .navbar-link{
+    font-size: 0.6rem;
+    
+  }
+  .join-discord-container{
+    margin-top: 7rem;
+  }
+
+
 }
